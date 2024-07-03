@@ -1,0 +1,53 @@
+.pomodoro-timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 90px);
+}
+
+.container,
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.timer-container,
+.timer-container2 {
+    margin-bottom: 10px;
+}
+
+.clock-container,
+.clock-container2 {
+    font-size: 3rem;
+}
+
+.clock-btn,
+.clock-btn2,
+.extraButtons {
+    margin-top: 10px;
+}
+
+.clock-btn button,
+.clock-btn2 button,
+.extraButtons button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* .clock-btn button:hover,
+.clock-btn2 button:hover,
+.extraButtons button:hover {
+    background-color: #ddd;
+} */
+
+.extraButtons {
+    display: flex;
+    justify-content: center;
+}

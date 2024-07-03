@@ -1,0 +1,77 @@
+#todoSection {
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.todoContainer {
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgb(182, 255, 187);
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-section input {
+    margin-right: 10px;
+}
+
+.alert-message {
+    margin-bottom: 20px;
+}
+
+.todos-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#editBtn {
+    padding: 8px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+}
+
+
+th {
+    text-align: start;
+    padding: 10px;
+}
+
+
+
+.todos-list-body tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.todos-list-body td {
+    padding: 10px;
+}
+
+.todo-item button {
+    margin-right: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}

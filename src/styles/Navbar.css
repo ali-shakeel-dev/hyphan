@@ -1,0 +1,85 @@
+#navBar {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0 2%;
+    box-shadow: 10px 10px 0 0 rgb(0, 0, 0);
+    border-radius: 4em;
+    /* position: fixed; */
+    z-index: 5;
+}
+
+#navBar .logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+#navBar .logo .logoText {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#navBar .logo img {
+    padding: 5px 0;
+    padding-right: 20px;
+}
+
+#navBar .itemsList a {
+    padding: 10px;
+}
+
+.BurgerIcon {
+    display: none;
+}
+
+
+
+@media (max-width: 1024px) {
+    /* Navbar Responsiveness */
+
+
+    #navBar {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 15% 0 !important;
+        border-radius: 0rem !important;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: none !important;
+        transition: all ease .5s;
+        right: -100%;
+        position: fixed;
+        z-index: 5;
+    }
+
+    #navBar .logo img {
+        display: none;
+    }
+
+    #navBar .itemsList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navBar.active {
+        right: 0;
+    }
+
+    .BurgerIcon {
+        z-index: 10;
+        display: block;
+        position: absolute;
+        right: 2%;
+        top: 2%;
+        width: 50px;
+        cursor: pointer;
+    }
+}
